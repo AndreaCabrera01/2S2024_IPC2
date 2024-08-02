@@ -1,28 +1,31 @@
-#Funcion Suma
+# Funciones:
+# Función Suma:
+
+def funcDummy():
+    print("hola")
+
 def sumaFunc(num1, num2):
     return num1 + num2
 
-#Funcion Resta
 def restaFunc(num1, num2):
     return num1 - num2
 
-#Funcion Multiplicación
-def multiFunc(num1, num2):
-    return num1 * num2
-
-#Función de División
-def divFunc(num1, num2):
+def divisionFunc(num1, num2):
     return num1 / num2
 
+def multiplicacionFunc(num1, num2):
+    return num1 * num2
+
 def Menu():
-    print ('Que operacion quieres hacer?')
-    print ('1. Suma')
-    print ('2. Resta')
-    print ('3. Multiplicacion')
-    print ('4. Division')
-    print ('5. Salir')
+    print('¿Qué operación quieres hacer?')
+    print('1. Suma')
+    print('2. Resta')
+    print('3. Multiplicación')
+    print('4. División')
+    print('5. Salir')
     opcion = input()
     return opcion
+
 
 if  __name__ == '__main__':
     print('Hola, estoy en el main')
@@ -74,12 +77,12 @@ if  __name__ == '__main__':
     print(multiplicacion)
     print(division)
 
-    # print('Ingrese su nombre: ')
-    # nombre = input()
+    print('Ingrese su nombre: ')
+    nombre = input()
 
     edad = input("Ingrese su edad: ")
 
-    # print('Hola ' + nombre + ' su edad es:', int(edad))
+    print('Hola ' + nombre + ' su edad es:', int(edad))
 
     # Condicionales:
     # IF:
@@ -111,66 +114,64 @@ if  __name__ == '__main__':
     
     #Ciclos:
     # FOR:
-    for i in range(0,10):
+    for i in range(1, 11):
+        print(i, "HOLA")
+
+    for i in range(0, 10, 2):
         print(i)
 
-    # WHILE:
-    print('CONTADOR CON WHILE: ')
+    '''
+    for(int i=0; i<10; i+=2){
+    
+    }
+
+    '''
+
+    #WHILE:
+    print("CONTADOR CON WHILE: ")
     contador = 0
     while contador < 10:
         print(contador)
-        contador += 1
+        contador+=1
     
-    # Funciones:
-    print('SUMA', sumaFunc(1, 89))
-    print('RESTA', restaFunc(2, 6))
-    print('MULTIPLICACIÓN', multiFunc(2, 8))
-    print('DIVISIÓN', divFunc(8, 4))
+    # FUNCIONES
+    print('SUMA', sumaFunc(1,22))
+    print('RESTA', restaFunc(7,1))
+    print('MULTIPLICACIÓN', multiplicacionFunc(4,4))
+    print('DIVISIÓN', divisionFunc(6,2))
 
-    #Saltos de Línea
+    funcDummy()
+
+    # Saltos de Línea:
     print()
     print('\n')
 
-    # listas:
-    lista = [1,2,3]
-    print(lista)
+    # Listas:
+    listaEjemplo = [1,2,3]
+    listaEjemplo2 = []
+    listaEjemplo2 = [1, "a", True]
 
-    '''
-    JAVA:
+    for elemento in listaEjemplo:
+        print(elemento)
 
-    for(int i = 0; i < lista.length; i++){
-        System.out.println(lista[i]);
-    }
-    '''
+    for i in range(0, len(listaEjemplo)):
+        print(listaEjemplo[i])
 
+    opcionSeleccionada = Menu()
+    while opcionSeleccionada != 5:
+        num1 = int(input('Ingrese el primer número: '))
+        num2 = int(input('Ingrese el segundo número: '))
 
-    for i in lista:
-        print(i)
+        if opcionSeleccionada == '1':
+            print(" La suma es: "+ str(sumaFunc(num1, num2)))
+        elif opcionSeleccionada == '2':
+            print(" La resta es: "+ str(restaFunc(num1, num2)))
+        elif opcionSeleccionada == '3':
+            print(" La multiplicación es: "+ str(multiplicacionFunc(num1, num2))) 
+        elif opcionSeleccionada == '4':
+            print(" La división es: "+ str(divisionFunc(num1, num2))) 
+        else:
+            print("Opción no válida.")
 
-    
-    print('Por posición:')
-    for pos in range(0, len(lista)):
-        print(lista[pos])
-
-        print('Por posición:')
-    for pos in range(0, len(lista)):
-        print(lista[pos])
-
-    opcion = Menu()
-    while opcion != '5':
-        num1 = int(input('Ingresa el primer número: '))
-        num2 = int(input('Ingresa el segundo número: '))
-
-        if opcion == '1':
-            print('La suma es: ' + str(sumaFunc(num1, num2)))
-        elif opcion == '2':
-            print('La resta es: ' + str(restaFunc(num1, num2)))
-        elif opcion == '3':
-            print('La multiplicación es: ' + str(multiFunc(num1, num2)))
-        elif opcion == '4':
-            print('La división es: ' + str(divFunc(num1, num2)))
-        else: 
-            print('Opción no válida')
-        opcion = Menu()
-
-    print('Adiós, gracias por usar la calculadora')
+        opcionSeleccionada = Menu()
+    print("Adiós, gracias por usar la calculadora")  
