@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Inicio del archivo XML -->
+<listado> <!-- Inicio de la raíz del archivo XML -->
+    <Banco nombre="Banrural" direccion="Av Reforma, 9-30, Zona 9">  <!-- Elemento Banco con dos atributos: nombre y direccion -->
+        <Antiguedad>26</Antiguedad> <!-- Elemento antiguedad -->
+        <sucursales>350</sucursales><!-- Elemento sucursales -->
+        <Clientes> <!-- Elemento Clientes que contiene dentro múltiples elementos de Cliente -->
+            <Cliente> <!-- Elemento Cliente -->
+                <Nombre>Pepito García</Nombre> <!-- Elemento Nombre -->
+                <CUI>7884299560101</CUI> <!-- Elemento CUI -->
+                <Saldo>8500.59</Saldo> <!-- Elemento Saldo -->
+                <edad>26</edad> <!-- Elemento edad -->
+            </Cliente> <!-- Fin del elemento Cliente -->
+            <Cliente> 
+                <Nombre>Juan Álvarez</Nombre> 
+                <CUI>4257299560101</CUI> 
+                <Saldo>500.09</Saldo> 
+                <edad>21</edad> 
+            </Cliente> 
+            <Cliente>
+                <Nombre>Fulano Pérez</Nombre> 
+                <CUI>9107225740101</CUI> 
+                <Saldo>35000.86</Saldo> 
+                <edad>46</edad> 
+            </Cliente> 
+        </Clientes> <!-- Fin del elemento Clientes -->
+    </Banco> <!-- Fin del elemento Banco -->
+    <Banco nombre="Banco Industrial" direccion="Vía 5 5-35 Zona 4, Ciudad de Guatemala, Guatemala">  <!-- Elemento Banco con dos atributos: nombre y direccion -->
+        <Antiguedad>56</Antiguedad> <!-- Elemento Antiguedad -->
+        <sucursales>300</sucursales><!-- Elemento sucursales -->
+        <Clientes> <!-- Elemento Clientes que contiene dentro múltiples elementos de Cliente -->
+            <Cliente> <!-- Elemento Cliente -->
+                <Nombre>Lucas González</Nombre> <!-- Elemento Nombre -->
+                <CUI>1884601160607</CUI>  <!-- Elemento CUI -->
+                <Saldo>7700.12</Saldo> <!-- Elemento Saldo -->
+                <edad>24</edad> <!-- Elemento edad -->
+            </Cliente> <!-- Fin del elemento Cliente -->
+            <Cliente> 
+                <Nombre>Amelia Porras</Nombre> 
+                <CUI>1251240564041</CUI> 
+                <Saldo>6203.09</Saldo> 
+                <edad>22</edad> 
+            </Cliente> 
+            <Cliente>
+                <Nombre>Juana Lopez</Nombre> 
+                <CUI>3107025740101</CUI> 
+                <Saldo>68000.06</Saldo> 
+                <edad>31</edad> 
+            </Cliente> 
+        </Clientes> <!-- Fin del elemento Clientes -->
+    </Banco> <!-- Fin del elemento Banco -->
+</listado> <!-- Fin de la raíz del archivo XML -->
