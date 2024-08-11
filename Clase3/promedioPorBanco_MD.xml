@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<listadoReporte>
+    <Banco nombre="Banrural">
+        <direccion>Av Reforma, 9-30, Zona 9</direccion>
+        <promedioSaldo>14667</promedioSaldo>
+    </Banco>
+    <Banco nombre="Banco Industrial">
+        <direccion>Vía 5 5-35 Zona 4, Ciudad de Guatemala, Guatemala</direccion>
+        <promedioSaldo>27301</promedioSaldo>
+    </Banco>
+</listadoReporte>
