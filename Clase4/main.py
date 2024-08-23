@@ -1,5 +1,7 @@
 from Estructuras.ListaEnlazada.ListaEnlazada import ListaEnlazada
 from Estructuras.ListaDEnlazada.ListaDEnlazada import ListaDEnlazada
+from Estructuras.ListaCircular.ListaCircular import listaCircular
+from Estructuras.ListaDCircular.ListaDCircular import ListaDCircular
 
 from Animal import Animal
 
@@ -35,3 +37,20 @@ if __name__ == "__main__":
     listaDEn.imprimir()
     print(" REVERSA: ")
     listaDEn.imprimirReversa()
+
+
+    print("*------------ LISTA CIRCULAR")
+    listaC = listaCircular()
+    listaC.insertar("Pelota_Azul")
+    listaC.insertar("Pelota_Amarilla")
+    listaC.insertar("Pelota_Verde")
+
+    listaC.imprimir()
+
+    print("////////////////// DOBLE CIRCULAR")
+    listaDCircular = ListaDCircular()
+    listaDCircular.insertar(1)
+    listaDCircular.insertar(3)
+    listaDCircular.insertar(5)
+
+    listaDCircular.imprimir()
