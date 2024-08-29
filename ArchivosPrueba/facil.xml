@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<matrices>
+    <matriz nombre="Recursos" n="5" m="6">
+        <dato x="1" y="1">5</dato>
+        <dato x="1" y="2">6</dato>
+        <dato x="1" y="3">0</dato>
+        <dato x="1" y="4">1</dato>
+        <dato x="1" y="5">0</dato>
+        <dato x="1" y="6">0</dato>
+        <dato x="2" y="1">0</dato>
+        <dato x="2" y="2">0</dato>
+        <dato x="2" y="3">0</dato>
+        <dato x="2" y="4">9</dato>
+        <dato x="2" y="5">4</dato>
+        <dato x="2" y="6">0</dato>
+        <dato x="3" y="1">2</dato>
+        <dato x="3" y="2">3</dato>
+        <dato x="3" y="3">6</dato>
+        <dato x="3" y="4">7</dato>
+        <dato x="3" y="5">4</dato>
+        <dato x="3" y="6">6</dato>
+        <dato x="4" y="1">7</dato>
+        <dato x="4" y="2">1</dato>
+        <dato x="4" y="3">0</dato>
+        <dato x="4" y="4">3</dato>
+        <dato x="4" y="5">0</dato>
+        <dato x="4" y="6">0</dato>
+        <dato x="5" y="1">0</dato>
+        <dato x="5" y="2">1</dato>
+        <dato x="5" y="3">3</dato>
+        <dato x="5" y="4">2</dato>
+        <dato x="5" y="5">7</dato>
+        <dato x="5" y="6">1</dato>
+    </matriz>
+    <matriz nombre="Verificación" n="0" m="0"> <!-- Debe de dar error ya que n y m son menores que 1 -->
+        <dato x="1" y="1">0</dato>
+        <dato x="1" y="2">1</dato>
+    </matriz>
+    <matriz nombre="Pruebas Símbolos áéíóú _ Ññ" n="3" m="3"> 
+        <dato x="1" y="1">0</dato>
+        <dato x="1" y="2">1</dato>
+        <dato x="1" y="3">2</dato>
+        <dato x="2" y="1">3</dato>
+        <dato x="2" y="2">4</dato>
+        <dato x="2" y="3">5</dato>
+        <dato x="3" y="1">6</dato>
+        <dato x="3" y="2">7</dato>
+        <dato x="3" y="3">8</dato>
+    </matriz>
+</matrices>
