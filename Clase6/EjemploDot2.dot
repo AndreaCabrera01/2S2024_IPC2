@@ -1,0 +1,98 @@
+ digraph G {
+        rankdir=LR
+        rankdir=TB
+
+        subgraph cluster_1 {
+            fontname="Century Gothic"
+            label="Matriz - Ejemplo"
+            edge[dir="none"]
+
+            
+                node00 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="2"]
+                
+                node01 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="3"]
+                
+                node02 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node03 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="4"]
+                
+                node10 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node11 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node12 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="6"]
+                
+                node13 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="3"]
+                
+                node20 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="1"]
+                
+                node21 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node22 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="1"]
+                
+                node23 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="5"]
+                
+                node30 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node31 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="0"]
+                
+                node32 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="3"]
+                
+                node33 [shape=square fillcolor="gray" style=filled fontname="Century Gothic" label="1"]
+                
+                node00 -> node01 [dir=none];
+                
+                node01 -> node02 [dir=none];
+                
+                node02 -> node03 [dir=none];
+                
+                node10 -> node11 [dir=none];
+                
+                node11 -> node12 [dir=none];
+                
+                node12 -> node13 [dir=none];
+                
+                node20 -> node21 [dir=none];
+                
+                node21 -> node22 [dir=none];
+                
+                node22 -> node23 [dir=none];
+                
+                node30 -> node31 [dir=none];
+                
+                node31 -> node32 [dir=none];
+                
+                node32 -> node33 [dir=none];
+                
+                node00 -> node10 [dir=none];
+                
+                node01 -> node11 [dir=none];
+                
+                node02 -> node12 [dir=none];
+                
+                node03 -> node13 [dir=none];
+                
+                node10 -> node20 [dir=none];
+                
+                node11 -> node21 [dir=none];
+                
+                node12 -> node22 [dir=none];
+                
+                node13 -> node23 [dir=none];
+                
+                node20 -> node30 [dir=none];
+                
+                node21 -> node31 [dir=none];
+                
+                node22 -> node32 [dir=none];
+                
+                node23 -> node33 [dir=none];
+                {rank=same; node00;node01;node02;node03;}
+{rank=same; node10;node11;node12;node13;}
+{rank=same; node20;node21;node22;node23;}
+{rank=same; node30;node31;node32;node33;}
+
+            }
+        
+        }
+        
