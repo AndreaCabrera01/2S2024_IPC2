@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#abbd7b]">
+    {% extends 'navBar.html' %} 
+    {% block contenido %}
+    <div class="container mx-auto h-screen flex justify-center items-center">
+        <div class="w-full rounded overflow-hidden shadow-lg bg-white mx-5">
+            <table class="w-full table-auto">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2">Nombre</th>
+                    <th class="px-4 py-2">Edad</th>
+                    <th class="px-4 py-2">Tipo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ textoHTML }}
+                </tbody>
+              </table>
+          </div>
+    </div>
+    
+    {% endblock %}
+  </body>
+</html>
