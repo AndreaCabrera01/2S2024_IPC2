@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"??>
+<ListaMaquinas>
+    <Maquina>
+        <NombreMaquina>M01PC2</NombreMaquina>
+        <CantidadLineasProduccion>3</CantidadLineasProduccion>
+        <CantidadComponentes>8</CantidadComponentes>
+        <TiempoEnsamblaje>2</TiempoEnsamblaje>
+        <ListadoProductos>
+            <Producto>
+                <nombre>Audífonos Bluetooth</nombre>
+                <elaboracion>
+                L2C3    L3C2        L1C2 L1C4   L2C7            L3C8
+                </elaboracion>
+            </Producto>
+            <Producto>
+                <nombre>Mouse Inalámbrico</nombre>
+                <elaboracion>
+                L1C2    L1C1        L2C3 L3C2   L1C3 L3C5 L2C6 L1C7 L1C8
+                </elaboracion>
+            </Producto>
+        </ListadoProductos>
+    </Maquina>
+    <Maquina>
+        <NombreMaquina>Super Máquina 3000</NombreMaquina>
+        <CantidadLineasProduccion>5</CantidadLineasProduccion>
+        <CantidadComponentes>10</CantidadComponentes>
+        <TiempoEnsamblaje>5</TiempoEnsamblaje>
+        <ListadoProductos>
+            <Producto>
+                <nombre>CPU</nombre>
+                <elaboracion>
+                    L1C10  L2C8
+                </elaboracion>
+            </Producto>
+            <Producto>
+                <nombre>Monitor</nombre>
+                <elaboracion>
+                            L1C1   L2C2        L3C3 L4C4   L5C5     L1C6 L2C7   L3C8 L4C9      L5C10
+                </elaboracion>
+            </Producto>
+        </ListadoProductos>
+    </Maquina>
+</ListaMaquinas>
