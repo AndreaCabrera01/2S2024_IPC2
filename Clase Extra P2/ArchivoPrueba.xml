@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"??>
+<?xml version="1.0" encoding="UTF-8"?>
 <ListaMaquinas>
     <Maquina>
         <NombreMaquina>M01PC2</NombreMaquina>
@@ -36,6 +36,32 @@
                 <nombre>Monitor</nombre>
                 <elaboracion>
                             L1C1   L2C2        L3C3 L4C4   L5C5     L1C6 L2C7   L3C8 L4C9      L5C10
+                </elaboracion>
+            </Producto>
+        </ListadoProductos>
+    </Maquina>
+    <Maquina>
+        <NombreMaquina>Maquina Extra</NombreMaquina>
+        <CantidadLineasProduccion>2</CantidadLineasProduccion>
+        <CantidadComponentes>5</CantidadComponentes>
+        <TiempoEnsamblaje>3</TiempoEnsamblaje>
+        <ListadoProductos>
+            <Producto>
+                <nombre>Teclado Alámbrico</nombre>
+                <elaboracion>
+                    L2C3  L1C1      L2C4   L1C5
+                </elaboracion>
+            </Producto>
+            <Producto>
+                <nombre>Micrófono</nombre>
+                <elaboracion>
+                    L2C3 L2C1    L1C3   L1C4
+                </elaboracion>
+            </Producto>
+            <Producto>
+                <nombre>Extra Pruebas</nombre>
+                <elaboracion>
+                    L2C2 L1C1       L2C3   L2C5    L1C4
                 </elaboracion>
             </Producto>
         </ListadoProductos>
