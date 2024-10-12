@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+  </head>
+
+  <body>
+    <nav
+      class="bg-[#18191a] fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+      >
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://i.postimg.cc/W3zcy58V/IPC2-PIZZAS.png"
+            class="w-[60px] h-[60px] rounded-lg"
+            alt="Logo IPC2 - Pizzas"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            IPC2 - Pizzas
+          </span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a href="{% url 'cardsPizza' %}" 
+            <button
+              type="button"
+              class="text-white hover:bg-[#303030] transition-all duration-300 ease-in-out font-medium rounded-lg text-sm px-4 py-2 text-center flex items-center space-x-2"
+            >
+              <span>Ver el menú</span>
+            </button>
+          </a>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <a href="{% url 'configurar' %}">
+              <button
+                type="button"
+                class="text-white hover:bg-[#303030] transition-all duration-300 ease-in-out font-medium rounded-lg text-sm px-4 py-2 text-center flex items-center space-x-2"
+              >
+                <span>Configurar</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Inicio del archivo XML -->
+<configuraciones>
+    <ListadoUsuarios>
+        <Usuario user="user1">
+            <fecha_creacion>Guatemala, 11/10/2024</fecha_creacion>
+            <password>secret1</password>
+            <rol>usuario</rol>
+        </Usuario>
+        <Usuario user="user2">
+            <fecha_creacion>Guatemala, 11/10/2024</fecha_creacion>
+            <password>secret2</password>
+            <rol>usuario</rol>
+        </Usuario>
+        <Usuario user="administrador">
+            <fecha_creacion>Guatemala, 11/10/2024</fecha_creacion>
+            <password>1234</password>
+            <rol>admin</rol>
+        </Usuario>
+    </ListadoUsuarios>
+
+    <ListadoProductos>
+        <Pizza>
+            <nombre>Pizza de Pepperoni</nombre>
+            <precio>Q. 50.00</precio>
+            <ingredientes>Pepperoni, queso, salsa de tomate</ingredientes>
+            <imagen>https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-peperoni.jpg</imagen>
+        </Pizza>
+        <Pizza>
+            <nombre>Pizza de Jamón y Queso</nombre>
+            <precio>Q. 45.00</precio>
+            <ingredientes>Jamón, queso, salsa de tomate</ingredientes>
+            <imagen>https://www.novachef.es/media/images/pizza-jamon-queso.jpg</imagen>
+        </Pizza>
+        <Pizza>
+            <nombre>Pizza de Vegetales</nombre>
+            <precio>Q. 40.00</precio>
+            <ingredientes>Vegetales, queso, salsa de tomate</ingredientes>
+            <imagen>https://images.aws.nestle.recipes/resized/2020_04_29T15_07_17_mrs_ImageRecipes_146141lrg_1080_850.jpg</imagen>
+        </Pizza>
+    </ListadoProductos>
+</configuraciones> <!-- Fin del elemento Configuraciones -->
