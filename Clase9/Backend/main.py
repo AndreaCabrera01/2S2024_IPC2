@@ -25,6 +25,7 @@ class Pizza:
         self.precio = precio
         self.ingredientes = ingredientes
         self.imagen = imagen
+        self.cantidad = 0
 
 
 # Routes
@@ -94,6 +95,35 @@ def getPizza(id):
 
     return jsonify({'message': 'Pizza no encontrada'})
 
+
+
+@app.route('/config/comprarPizza/<id>', methods=['POST'])
+def comprarPizza(id):
+    for pizza in listadoPizzas:
+        if pizza.id == int(id):
+            pizza.cantidad += 1
+            return jsonify({'message': 'Pizza Comprada'})
+
+    return jsonify({'message': 'Pizza no encontrada'})
+
+@app.route('/config/obtenerGraficos', methods=['GET'])
+def obtenerGraficos():
+    pizzas = []
+    cantidades = []
+
+    for pizza in listadoPizzas:
+        if pizza.id not in pizzas:
+            pizzas.append(pizza.nombre)
+            cantidades.append(pizza.cantidad)
+        else:
+            index = pizzas.index(pizza.nombre)
+            cantidades[index] += pizza.cantidad
+
+    respuesta = {}
+    for i in range(len(pizzas)):
+        respuesta[pizzas[i]] = cantidades[i]
+
+    return jsonify(respuesta)
 
 @app.route('/config/limpiarDatos', methods=['GET'])
 def limpiarDatos():

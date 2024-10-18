@@ -8,6 +8,8 @@
     <!-- Tailwind CDN -->
 
     <title>IPC2 PIZZAS</title>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <style>
       .bg-pattern {
@@ -19,90 +21,13 @@
   <body>
     {% include "NavBar.html" %}
 
-    <div
-      class="h-screen mt-[70px] max-h-screen w-screen bg-pattern flex flex-col"
-    >
-      <div class="flex-1 h-full">
-        <div class="flex-1 overflow-y-auto scrollbar-hide h-full">
-          <div class="mt-5 flex flex-col items-center justify-center">
-            <div class="flex items-center">
-              <h1 class="text-5xl font-bold text-black">Nuestro Menu</h1>
-            </div>
-          </div>
-
-          <div
-            class="w-full height-100 flex flex-wrap gap-4 justify-center mt-8"
-          >
-            <!-- Card  -->
-            {% for pizza in pizzas %}
-
-                <div
-                class="h-auto w-72 bg-white shadow-lg shadow-gray-500/50 rounded-lg overflow-hidden transition-all ease-out duration-300 hover:scale-105 p-2 m-3 flex flex-col items-center"
-                >
-                <div class="flex items-center justify-center">
-                    {% if pizza.imagen %}
-                    <img
-                    src="{{ pizza.imagen }}"
-                    alt="Imagen de Pizza"
-                    class="w-64 h-64 rounded-lg object-contain object-center border-2 border-gray-300 bg-gray-200"
-                    />
-                    {% else %}
-                    <img
-                    src="https://media."
-                    alt="Imagen de Pizza"
-                    class="w-64 h-64 rounded-lg object-contain object-center border-2 border-gray-300 bg-gray-200"
-                    />
-                    {% endif %}
-                </div>
-                <div class="flex items-center justify-center py-4">
-                    <h1 class="text-xl font-semibold text-gray-800 text-center">
-                    {{ pizza.nombre }}
-                    </h1>
-                </div>
-
-                <div class="flex items-center justify-center">
-                    <div
-                    class="w-full justify-center items-center text-white font-bold py-2 px-4 rounded-full mx-1"
-                    >
-                    <form action="{% url 'verPizzaDetalle' pizza.id %}" method="get">
-                        {% csrf_token %}
-                        <button
-                        class="my-1 w-full bg-[#007ac2] hover:bg-blue-800 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded"
-                        >
-                        Detalle
-                        </button>
-                    </form>
-
-                    <form action="{% url 'realizarPedido' pizza.id %}" method="post">
-                      {% csrf_token %}
-                      <button
-                      class="my-1 w-full bg-[#4832a8] hover:bg-purple-800 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded"
-                      >
-                      Realizar Pedido
-                      </button>
-                  </form>
-                    </div>
-                </div>
-                </div>
-            {% endfor %}
-            <!-- Card  -->
-          </div>
-
-          <div class="mt-5 flex flex-col items-center justify-center">
-            <div class="flex items-center">
-              <a
-              href="{% url 'verEstadisticas' %}"
-              class="flex items-center justify-center"
-              >
-              <button class="bg-green-500 hover:bg-green-800 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded">
-                Ver estadísticas</button></a>
-            </div>
-          </div>
-
-
-
+    <div class="h-screen mt-[70px] w-full bg-pattern flex flex-col items-center justify-center">
+        <h1 class="text-5xl font-bold text-black mb-5">
+            Gráfico: Pizzas Compradas por Ingrediente
+        </h1>
+        <div class="container mt-5 p-4">
+            {{ plot_div|safe }}
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
