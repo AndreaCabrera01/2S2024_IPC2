@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+ <diccionario>
+    <sentimientos_positivos>
+        <palabra>excelente</palabra>
+        <palabra>bueno</palabra>
+        <palabra>maravilloso</palabra>
+    </sentimientos_positivos>
+    <sentimientos_negativos>
+        <palabra>lamentable</palabra>
+        <palabra>frustrante</palabra>
+        <palabra>deficiente</palabra>
+    </sentimientos_negativos>
+    <empresas_analizar>
+        <empresa>
+            <nombre> Nike </nombre>
+            <servicios>
+                <servicio nombre="Cobrar"> 
+                    <alias> cobrando </alias>
+                    <alias> cobran </alias>
+                    <alias> cobrado </alias>
+                </servicio>
+            </servicios>
+        </empresa>
+        <empresa>
+            <nombre> Adidas </nombre>
+            <servicios>
+                <servicio nombre="vENtA"> 
+                    <alias> vendido </alias>
+                </servicio>
+            </servicios>
+        </empresa>
+        <empresa>
+            <nombre> Walmart </nombre>
+            <servicios>
+                <servicio nombre="aTENciÓn"> 
+                    <alias> atendido </alias>
+                    <alias> atiende </alias>
+                    <alias> atendió </alias>
+                </servicio>
+            </servicios>
+        </empresa>
+    </empresas_analizar>
+ </diccionario>
+
+<!-- 
+<?xml version="1.0"?>
+<mensaje>
+    Lugar y fecha: Guatemala, 01/11/2024 15:20 Usuario: 
+    map0002@usac.edu Red social: X 
+    
+    deficiente y FRUSTRANTE cómo han cobrado en Nike, de verdad que JAMÁS compraré ahí de nuevo. Lo único bueno, es que al menos conseguí lo que necesitaba para hoy... A la siguiente compraré con antelación y buscaré un mejor lugar.
+</mensaje>
+
+
+
+
+-->
