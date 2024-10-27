@@ -88,17 +88,17 @@
                 <empresa nombre="Walmart">
                     <mensajes>
                         <total> 1 </total>
-                        <positivos> 1 </positivos>
+                        <positivos> 0 </positivos>
                         <negativos> 0 </negativos>
-                        <neutros> 0 </neutros>
+                        <neutros> 1 </neutros>
                     </mensajes>
                     <servicios>
                         <servicio nombre="aTENciÓn">
                             <mensajes>
                                 <total> 1 </total>
-                                <positivos> 1 </positivos>
+                                <positivos> 0 </positivos>
                                 <negativos> 0 </negativos>
-                                <neutros> 0 </neutros>
+                                <neutros> 1 </neutros>
                             </mensajes>
                         </servicio>
                     </servicios>
