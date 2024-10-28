@@ -80,9 +80,9 @@
         <fecha> 02/11/2024 </fecha>
             <mensajes>
                 <total> 2 </total>
-                <positivos> 2 </positivos>
+                <positivos> 1 </positivos>
                 <negativos> 0 </negativos>
-                <neutros> 0 </neutros>
+                <neutros> 1 </neutros>
             </mensajes>
             <analisis>
                 <empresa nombre="Walmart">
